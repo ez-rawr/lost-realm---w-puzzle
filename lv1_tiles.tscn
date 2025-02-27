@@ -1,0 +1,128 @@
+[gd_scene load_steps=14 format=3 uid="uid://dsp4lgfxdywht"]
+
+[ext_resource type="Texture2D" uid="uid://dhc7fwkwehncc" path="res://backgrounds/tiles_board.png" id="1_7a5mp"]
+[ext_resource type="Script" path="res://main.gd" id="2_1me4r"]
+[ext_resource type="Texture2D" uid="uid://bxngqgmhxjj3p" path="res://resized_image_2.png" id="3_56kky"]
+[ext_resource type="Texture2D" uid="uid://npd4r7knq6ly" path="res://resized_image_3.png" id="5_yeajl"]
+[ext_resource type="Texture2D" uid="uid://d3lflnay5rbso" path="res://resized_image_4.png" id="6_ylogn"]
+[ext_resource type="Texture2D" uid="uid://cyownbycmdf5o" path="res://resized_image_5.png" id="7_jk0ak"]
+[ext_resource type="Texture2D" uid="uid://bahvwa4pvwfbv" path="res://resized_image_6.png" id="8_7pk0d"]
+[ext_resource type="Texture2D" uid="uid://c38dck6ibq84l" path="res://resized_image_7.png" id="9_kjqt1"]
+[ext_resource type="Texture2D" uid="uid://5hpc85hofawk" path="res://resized_image_8.png" id="10_yte0r"]
+[ext_resource type="Texture2D" uid="uid://cmy3nstcthuhj" path="res://resized_image_9.png" id="11_gs1jv"]
+[ext_resource type="Texture2D" uid="uid://ppjtrf85iamm" path="res://empty_image.png" id="11_wwie8"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lqopk"]
+texture = ExtResource("1_7a5mp")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lapkd"]
+size = Vector2(795, 480)
+
+[node name="rr" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -6.0
+offset_top = 13.0
+offset_right = -6.0
+offset_bottom = 13.0
+
+[node name="Tile" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 13.0
+offset_top = -7.0
+offset_right = 13.0
+offset_bottom = -7.0
+mouse_filter = 2
+
+[node name="Panel" type="Panel" parent="Tile"]
+layout_mode = 1
+offset_left = -7.0
+offset_top = -7.0
+offset_right = 3342.0
+offset_bottom = 1874.0
+scale = Vector2(0.344, 0.344)
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_lqopk")
+
+[node name="Main" type="Area2D" parent="."]
+script = ExtResource("2_1me4r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Main"]
+position = Vector2(581.5, 310)
+shape = SubResource("RectangleShape2D_lapkd")
+
+[node name="Tile1" type="Sprite2D" parent="Main"]
+position = Vector2(316.5, 150)
+texture = ExtResource("3_56kky")
+
+[node name="Tile2" type="Sprite2D" parent="Main"]
+position = Vector2(581.5, 150)
+texture = ExtResource("5_yeajl")
+
+[node name="Tile3" type="Sprite2D" parent="Main"]
+position = Vector2(846.5, 150)
+texture = ExtResource("6_ylogn")
+
+[node name="Tile4" type="Sprite2D" parent="Main"]
+position = Vector2(316.5, 310)
+texture = ExtResource("7_jk0ak")
+
+[node name="Tile5" type="Sprite2D" parent="Main"]
+position = Vector2(581.5, 310)
+texture = ExtResource("8_7pk0d")
+
+[node name="Tile6" type="Sprite2D" parent="Main"]
+position = Vector2(846.5, 310)
+texture = ExtResource("9_kjqt1")
+
+[node name="Tile7" type="Sprite2D" parent="Main"]
+position = Vector2(316.5, 470)
+texture = ExtResource("10_yte0r")
+
+[node name="Tile8" type="Sprite2D" parent="Main"]
+position = Vector2(581.5, 470)
+texture = ExtResource("11_gs1jv")
+
+[node name="Tile9" type="Sprite2D" parent="Main"]
+position = Vector2(846.5, 470)
+texture = ExtResource("11_wwie8")
+
+[node name="Button" type="Button" parent="Main"]
+offset_left = 1075.0
+offset_top = 21.0
+offset_right = 1153.0
+offset_bottom = 61.0
+text = "RESET"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Main"]
+offset_left = 268.0
+offset_top = 189.0
+offset_right = 921.0
+offset_bottom = 366.0
+theme_override_font_sizes/normal_font_size = 124
+text = "YOU WIN!"
+
+[node name="Timer" type="Timer" parent="Main"]
+wait_time = 300.0
+one_shot = true
+
+[node name="Label" type="Label" parent="Main"]
+offset_left = 497.0
+offset_top = 563.0
+offset_right = 679.0
+offset_bottom = 624.0
+theme_override_font_sizes/font_size = 49
+text = "TIMER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Main"]
+offset_left = 271.0
+offset_top = 197.0
+offset_right = 918.0
+offset_bottom = 353.0
+theme_override_font_sizes/normal_font_size = 115
+text = "YOU LOSE!"
+
+[connection signal="pressed" from="Main/Button" to="Main" method="_on_button_pressed"]

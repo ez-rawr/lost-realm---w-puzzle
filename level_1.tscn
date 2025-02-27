@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cduq4ap22gw7i"]
+
+[ext_resource type="PackedScene" uid="uid://dsp4lgfxdywht" path="res://lv1_tiles.tscn" id="1_uep0a"]
+
+[node name="level1" type="Node2D"]
+
+[node name="rr" parent="." instance=ExtResource("1_uep0a")]

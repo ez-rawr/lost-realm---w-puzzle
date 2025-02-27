@@ -1,0 +1,13 @@
+res://dialogue/timelines/opening scene.dtl
+res://Prototype.tscn
+res://label.gd
+res://addons/dialogic/Modules/Text/node_name_label.gd
+res://main_menu.tscn
+res://jasper_2.tscn
+res://inside_house.tscn
+res://inside_temple.tscn
+res://mainmenu_bg.tscn
+res://instructions.tscn
+res://level_1.tscn
+res://lv1_tiles.tscn
+res://movements.gd

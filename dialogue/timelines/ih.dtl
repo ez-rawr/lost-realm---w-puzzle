@@ -1,0 +1,9 @@
+join Jasper (:|) rightmost
+Jasper: Mom?
+leave Jasper [animation="Instant Out" length="0.0"]
+join Jasper (sad) rightmost [animation="Instant In" length="0.0"]
+Jasper: Dad....?
+Jasper: Why is everything so quiet..
+*basement sound*
+Jasper: Are you guys downstairs?
+[Go To The Basement\: East]

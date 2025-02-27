@@ -1,0 +1,14 @@
+Label
+Control
+DialogicNode_NameLabel
+DialogicNode_Input
+RichTextLabel
+Timer
+Button
+Sprite2D
+CollisionShape2D
+Area2D
+Node2D
+GridContainer
+TextureButton
+Panel

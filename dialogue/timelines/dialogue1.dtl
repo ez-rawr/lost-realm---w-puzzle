@@ -1,0 +1,75 @@
+join Billy (angry teeth) leftmost [animation="Instant In" length="0.0" mirrored="true"]
+Billy - Village blacksmith, Kiki's father\
+[Press Laptop Pad To Continue]
+We know, he looks young for a father.
+Drop the skincare routine juseyo!
+join Kiki (:|) rightmost [animation="Instant In" length="0.0"]
+Kiki - Billy's daughter
+FIGHT, START!
+Kiki: oh my GOD
+
+Billy: ****** WHAT DO YOU WANT FROM ME YOU ****** ******
+Kiki: Help! Someone!
+Kiki: This old man is trying to take me away and do bad things to me!
+Billy: Shut your mouth! Other people are gonna think I'm not your dad!
+Kiki: Well I wish you weren't my dad.
+leave Billy [animation="Instant Out" length="0.0"]
+join Jasper (woah) leftmost [animation="Instant In" length="0.0" mirrored="true"]
+Jasper: dang.
+Kiki: I didn't mean that.
+leave --All-- [animation="Instant Out" length="0.0"]
+join Billy (woah open) leftmost [animation="Fade In" length="0.8" mirrored="true"]
+join Kiki (:|) rightmost [animation="Instant In" length="0.0"]
+...
+Kiki: What do you want Jasper?
+leave Billy [animation="Instant Out" length="0.0"]
+join Jasper (smile teeth) leftmost [animation="Fade In" mirrored="true"]
+- I just wanted to see what the commotion was...
+	Kiki: Well go mind your own business.
+	leave Jasper [animation="Instant Out" length="0.0"]
+	join Billy (:|) leftmost [animation="Instant In" length="0.0" mirrored="true"]
+	Billy: No, stay.
+- Well NOT YOU that's for sure.
+	Kiki: Excuse me?
+	leave Jasper [animation="Instant Out" length="0.0"]
+	join Billy (smile) leftmost [animation="Instant In" length="0.0" mirrored="true"]
+	Billy: Understandable.
+	Kiki: I'm too pretty for you anyways!
+- You.
+	leave Kiki [animation="Instant Out" length="0.0"]
+	join Kiki (smile) rightmost [animation="Instant In" length="0.0"]
+	Kiki: Well...
+	leave Jasper [animation="Instant Out" length="0.0"]
+	join Billy (angry teeth) leftmost [animation="Instant In" length="0.0"]
+	Billy: ABSOLUTELY NOT.
+	Kiki: Oh shut it old man!
+leave --All-- [animation="Instant Out" length="0.0"]
+join Jasper (smirk) leftmost [animation="Instant In" length="0.0" mirrored="true"]
+join Kiki rightmost
+Jasper: You guys literally act the exact same.
+Kiki: I guess we do..
+leave --All-- [animation="Instant Out" length="0.0"]
+join Billy (sad) leftmost [animation="Instant In" length="0.0" mirrored="true"]
+join Kiki (sad) rightmost [animation="Instant In" length="0.0"]
+Kiki: I'm sorry daddy, I didn't mean what I said.
+Billy: It's okay sweetie, I guess both of us often say things we don't  mean to say.
+leave --All-- [animation="Instant Out" length="0.0"]
+join Billy (smile) rightmost [animation="Instant In" length="0.0"]
+join Jasper (:3) leftmost [animation="Instant In" length="0.0" mirrored="true"]
+Jasper: Awww that's so sweet
+leave Jasper [animation="Instant Out" length="0.0"]
+join Jasper (sad) leftmost [animation="Instant In" length="0.0" mirrored="true"]
+Jasper: I miss mom and dad..
+Billy: Jasper, I'm sure they were just worried about you.
+Jasper: I know, but they've never been that mad at me before.
+Billy: Speaking of your parents, they said you should come back home right away after doing the laundry.
+Jasper: Well, okay... I'm gonna go now
+leave Billy [animation="Instant Out" length="0.0"]
+join Kiki (:D) rightmost [animation="Instant In" length="0.0"]
+Kiki: Be safe Jasper!
+Jasper: Bye guys, fight well!
+leave Kiki [animation="Instant Out" length="0.0"]
+join Billy (:|) rightmost [animation="Instant In" length="0.0"]
+Billy: ...
+Billy: What did you just say?
+[Go to Jasper's House\: East, Up the bridge, East, Down]

@@ -1,0 +1,37 @@
+join Jasper (:|) rightmost [animation="Instant In" length="0.0"]
+Jasper: It sure is hot outside..
+Jasper: And so boring!
+Can't do anything but think about very important thingies under this tree.
+Jasper: Like what if I just...
+- disappeared?
+	leave --All-- [animation="Instant Out" length="0.0"]
+	join Jasper (sad) rightmost [animation="Instant In" length="0.0"]
+	Jasper: would they miss me?
+- stay under this tree forever..
+	leave --All-- [animation="Instant Out" length="0.0"]
+	join Jasper (smirk) rightmost [animation="Instant In" length="0.0"]
+	Jasper: I would become one with the earth.
+	Jasper: That would be so cool!
+- fell asleep and everyone leaves me?
+	leave --All-- [animation="Instant Out" length="0.0"]
+	join Jasper (sad) rightmost [animation="Instant In" length="0.0"]
+	Jasper: I would miss mom, dad, and everyone in this village.
+leave --All-- [animation="Instant Out" length="0.0"]
+join Jasper (smile teeth) rightmost [animation="Instant In" length="0.0"]
+Jasper: Let's not think about such thoughts and enjoy our day!
+leave --All-- [animation="Instant Out" length="0.0"]
+join Jasper (sad) rightmost [animation="Instant In" length="0.0"]
+Jasper: I shouldn't have went outside the village though---
+Jasper: Then I wouldn't be doing all this laundry!
+Jasper: What's out there that they didn't want me to see so bad?
+Jasper: ...
+leave --All-- [animation="Instant Out" length="0.0"]
+join Jasper (smirk) rightmost [animation="Instant In" length="0.0"]
+Jasper: I'm SO cool
+leave --All-- [animation="Instant Out" length="0.0"]
+*BOOGSH*
+join Jasper (woah) rightmost [animation="Instant In" length="0.0"]
+Jasper (woah open): Are Billy and Kiki fighting again?
+leave --All--
+[Go to Billy and Kiki's house\: West]
+[signal arg="show_move_instructions"]
